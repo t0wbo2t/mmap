@@ -14,20 +14,20 @@ In this repository, we investigate the versatile uses of `mmap` to map files or 
 
 ### Memory Allocation
 
-This section demonstrates how `mmap` can be used to allocate memory. Programs that experiment with dynamically allocated memory via `mmap` are implemented to show its efficiency, and it’s potential in managing memory wth precise control.
+This ([allocation program](./mmap_allocation.c)) demonstrates how `mmap` can be used to allocate memory. Program that experiment with dynamically allocated memory via `mmap` is implemented to show its efficiency, and it’s potential in managing memory wth precise control.
 
 ### Reading and Writing Files
 
-Here, we explore how `mmap` can be used for file I/O operations. By mapping files into memory, the programs read and write data directly through memory access, improving performance and offering more flexibility over traditional file handling.
+In this [program] (./mmap_read_file.c), we explore how `mmap` can be used for file I/O operations. By mapping files into memory, the programs read and write data directly through memory access, improving performance and offering more flexibility over traditional file handling.
 
 ### IPC Mechanism
 
-Theis experiment utilize `mmap` as an inter-process communication mechanism. By mapping shared memory into multiple processes, the repository demonstrates the potential for efficient communication between processes, avoiding traditional methods like pipes or message queues.
+[This] (./mmap_ipc.c) experiment utilize `mmap` as an inter-process communication mechanism. By mapping shared memory into multiple processes, the repository demonstrates the potential for efficient communication between processes, avoiding traditional methods like pipes or message queues.
 
 ### Executing Raw Instruction Files
 
-One of the unique experiments in this repository involves using `mmap` to map raw instruction files into memory and executing them. This showcases how mmap can be applied in executing binary instruction streams directly from memory, allowing for lower-level manipulation and exploration of instruction execution.
-
+One of the unique experiments in this repository involves using `mmap` to map raw instruction files into memory and executing them. [This](./mmap_address_execution.c) showcases how mmap can be applied in executing binary instruction streams directly from memory, allowing for lower-level manipulation and exploration of instruction execution.
+I have a simple [exit shellcode] (./exit_shellcode) file which contains an exit system call, which we can pass as an argument to program. 
 
 ## Contributing
 
