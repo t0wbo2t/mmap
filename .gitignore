@@ -1,0 +1,13 @@
+# Ignore compiled executables
+*.exe
+*.out
+*.o
+*.a
+*.so
+*.dll
+mmap_address_execution
+mmap_allocation
+mmap_ipc
+mmap_read_file
+print_shellcode
+
