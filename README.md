@@ -15,7 +15,7 @@ In this repository, we investigate the versatile uses of `mmap` to map files or 
 ### Memory Allocation
 Source File: [Allocation Program](./mmap_allocation.c)
 
-This program demonstrates how `mmap` can be used to allocate memory. Program that experiment with dynamically allocated memory via `mmap` is implemented to show its efficiency, and it’s potential in managing memory wth precise control.
+This program demonstrates how `mmap` can be used to allocate memory. A `Fibonacci` program that experiment with dynamically allocated memory via `mmap` is implemented to show its efficiency, and it’s potential in managing memory wth precise control.
 
 ### Reading and Writing Files
 Source File: [File Access Program](./mmap_read_file.c)
